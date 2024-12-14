@@ -1,6 +1,8 @@
 {
   modulesPath,
   pkgs,
+  config,
+  inputs,
   ...
 }: {
   imports = [
@@ -13,7 +15,9 @@
     ../sys/cache.nix
 
     ../services/journald.nix
+    ../services/net/nginx.nix
     ../services/net/sshd.nix
+    ../services/databases/postgresql.nix
   ];
 
   boot.loader.grub = {
@@ -26,13 +30,17 @@
   programs.fish.enable = true;
   environment.systemPackages = with pkgs; [
     neovim
+    ripgrep
+    fzf
     gitMinimal
+    curl
     curlie
     bottom
     ncdu
     rsync
     zoxide
     bat
+    tealdeer
   ];
 
   users.users.kh = {
@@ -56,10 +64,10 @@
       ];
     };
   };
-  # users.defaultUserShell = pkgs.fish;
+  users.defaultUserShell = pkgs.fish;
 
   # sudo ip route add 10.0.0.1 dev ens3
-  # sudo ip address add 149.154.65.106/32 dev ens3
+  # sudo ip address add 212.109.193.139/32 dev ens3
   # sudo ip route add default via 10.0.0.1 dev ens3
   networking = {
     useDHCP = false;
@@ -89,4 +97,18 @@
 
   system.stateVersion = "24.05";
   documentation.nixos.enable = false;
+
+  # apps
+  services.nginx.virtualHosts."todo.frakurai.ru" = {
+    forceSSL = true;
+    enableACME = true;
+
+    root = inputs.todo-vue.packages.x86_64-linux.default;
+
+    extraConfig = ''
+      location / {
+        try_files $uri $uri/ /index.html;
+      }
+    '';
+  };
 }

@@ -23,48 +23,6 @@
         "type": "github"
       }
     },
-    "buzz-phoenix": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1732825263,
-        "narHash": "sha256-bNOua+Ru233ORnDiJ1CD8GRD75uhPxroJ+HORPZ7wHk=",
-        "owner": "ksevelyar",
-        "repo": "buzz-phoenix",
-        "rev": "aacbc7b1322bb1bf0c741bc1a001c6a942c6e809",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ksevelyar",
-        "repo": "buzz-phoenix",
-        "type": "github"
-      }
-    },
-    "buzz-vue": {
-      "inputs": {
-        "flake-utils": "flake-utils_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1732825226,
-        "narHash": "sha256-iUaHT1/ROnX2VHKBGqQqHw8a4ySWZqwZS9NzYJZrYYI=",
-        "owner": "ksevelyar",
-        "repo": "buzz-vue",
-        "rev": "633dd08a9ccb1dff138251847862ddbeecd7c7d8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ksevelyar",
-        "repo": "buzz-vue",
-        "type": "github"
-      }
-    },
     "darwin": {
       "inputs": {
         "nixpkgs": [
@@ -112,109 +70,16 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1726560853,
-        "narHash": "sha256-X6rJYSESBVr3hBoH0WbKE5KvhPU5bloyZ2L4K60/fPQ=",
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "c1dfcf08411b08f6b8615f7d8971a2bfa81d5e8a",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
         "type": "github"
       },
       "original": {
         "id": "flake-utils",
         "type": "indirect"
-      }
-    },
-    "flake-utils_2": {
-      "inputs": {
-        "systems": "systems_3"
-      },
-      "locked": {
-        "lastModified": 1726560853,
-        "narHash": "sha256-X6rJYSESBVr3hBoH0WbKE5KvhPU5bloyZ2L4K60/fPQ=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c1dfcf08411b08f6b8615f7d8971a2bfa81d5e8a",
-        "type": "github"
-      },
-      "original": {
-        "id": "flake-utils",
-        "type": "indirect"
-      }
-    },
-    "flake-utils_3": {
-      "inputs": {
-        "systems": "systems_4"
-      },
-      "locked": {
-        "lastModified": 1726560853,
-        "narHash": "sha256-X6rJYSESBVr3hBoH0WbKE5KvhPU5bloyZ2L4K60/fPQ=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c1dfcf08411b08f6b8615f7d8971a2bfa81d5e8a",
-        "type": "github"
-      },
-      "original": {
-        "id": "flake-utils",
-        "type": "indirect"
-      }
-    },
-    "flake-utils_4": {
-      "inputs": {
-        "systems": "systems_5"
-      },
-      "locked": {
-        "lastModified": 1726560853,
-        "narHash": "sha256-X6rJYSESBVr3hBoH0WbKE5KvhPU5bloyZ2L4K60/fPQ=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c1dfcf08411b08f6b8615f7d8971a2bfa81d5e8a",
-        "type": "github"
-      },
-      "original": {
-        "id": "flake-utils",
-        "type": "indirect"
-      }
-    },
-    "habits-phoenix": {
-      "inputs": {
-        "flake-utils": "flake-utils_3",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1732568366,
-        "narHash": "sha256-WsUIy+hP5WNCZ1A/SZUdzPOXP+6DVtBc3oKh3elu5t4=",
-        "owner": "ksevelyar",
-        "repo": "habits-phoenix",
-        "rev": "4fdd6df26e8ff89fbd4cc8ceacb97bfdfd6daa3a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ksevelyar",
-        "repo": "habits-phoenix",
-        "type": "github"
-      }
-    },
-    "habits-vue": {
-      "inputs": {
-        "flake-utils": "flake-utils_4",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1731363626,
-        "narHash": "sha256-2f9G0Hf5HoHcjJykUlMM6aNxOL0cefvL/mjXXfq32ug=",
-        "owner": "ksevelyar",
-        "repo": "habits-vue",
-        "rev": "ecbbf2f0cd67591d403678c55ff6a39c7bba0a3a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ksevelyar",
-        "repo": "habits-vue",
-        "type": "github"
       }
     },
     "home-manager": {
@@ -257,12 +122,9 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
-        "buzz-phoenix": "buzz-phoenix",
-        "buzz-vue": "buzz-vue",
         "disko": "disko",
-        "habits-phoenix": "habits-phoenix",
-        "habits-vue": "habits-vue",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "todo-vue": "todo-vue"
       }
     },
     "systems": {
@@ -295,48 +157,24 @@
         "type": "github"
       }
     },
-    "systems_3": {
+    "todo-vue": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
       "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "lastModified": 1734188778,
+        "narHash": "sha256-ae14DgD5aSLE6FE6+s2sn1FsDkAXTUmc6FomnFme7xc=",
+        "owner": "dotnil",
+        "repo": "todo-vue",
+        "rev": "a07e80bcd8a778bf65b5476112bd75404ef2b61e",
         "type": "github"
       },
       "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
-    "systems_4": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
-    "systems_5": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
+        "owner": "dotnil",
+        "repo": "todo-vue",
         "type": "github"
       }
     }
